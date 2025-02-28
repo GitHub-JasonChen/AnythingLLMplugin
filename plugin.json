@@ -1,0 +1,34 @@
+{
+    "hubId": "openFDA search",
+    "name": "openFDA search",
+    "schema": "skill-1.0.0",
+    "version": "1.0.0",
+    "description": "Gets drug information from the openFDA drugs API.",
+    "author": "@Jason",
+    "author_url": "",
+    "license": "MIT",
+    "setup_args": {
+      "drugbank_api_key": {
+        "type": "string",
+        "required": true, 
+        "input": {
+          "type": "text",
+          "default": "YOUR openFDA API Key",
+          "placeholder": "sk-1234567890",
+          "hint": "The API key for the openFDA API"
+        },
+        "value": "Pw9JWidjay1wOo0Htm0Im4h7seIUZM6yTQ73J3Fm" 
+      }
+    },
+    "examples": [
+      {
+        "prompt": "Get drug information from openFDA",
+        "call": "{}" 
+      }
+    ],
+    "entrypoint": {
+      "file": "handler.js",
+      "params": {} 
+    },
+    "imported": true
+}
